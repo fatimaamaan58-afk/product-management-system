@@ -24,37 +24,32 @@ A Laravel-based web application for managing product inventory, categories, bran
 
 ## Setup Instructions
 
-1. Clone the repository:
-```bash
-git clone [https://github.com/fatimaamaan58-afk/product-management-system.git](https://github.com/fatimaamaan58-afk/product-management-system.git)
-cd product-management-system
-Install dependencies:
+### 1. Clone the repository
+`git clone [https://github.com/fatimaamaan58-afk/product-management-system.git](https://github.com/fatimaamaan58-afk/product-management-system.git)`
+`cd product-management-system`
 
-Bash
-composer install
-npm install && npm run dev
-Configure environment:
+### 2. Install dependencies
+`composer install`
+`npm install && npm run dev`
 
-Bash
-cp .env.example .env
-php artisan key:generate
-Set up database and storage:
+### 3. Configure environment
+`cp .env.example .env`
+`php artisan key:generate`
 
-Bash
-php artisan migrate:fresh --seed
-php artisan storage:link
-Run the server:
+### 4. Set up database and storage
+`php artisan migrate:fresh --seed`
+`php artisan storage:link`
 
-Bash
-php artisan serve
-Database Models
-Users: System user accounts and roles.
+### 5. Run the server
+`php artisan serve`
 
-Categories: Product categories (hasMany Products).
+## Database Models
 
-Brands: Product brands (hasMany Products).
+- **Users:** System user accounts and roles.
+- **Categories:** Product categories (`hasMany` Products).
+- **Brands:** Product brands (`hasMany` Products).
+- **Products:** Main catalog items (`belongsTo` Category, Brand).
 
-Products: Main catalog items (belongsTo Category, Brand).
+## License
 
-License
 MIT License
