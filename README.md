@@ -25,9 +25,9 @@ A Laravel-based web application for managing product inventory, categories, bran
 ## Setup Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone [https://github.com/fatimaamaan58-afk/product-management-system.git](https://github.com/fatimaamaan58-afk/product-management-system.git)
-   cd product-management-system
+```bash
+git clone [https://github.com/fatimaamaan58-afk/product-management-system.git](https://github.com/fatimaamaan58-afk/product-management-system.git)
+cd product-management-system
 Install dependencies:
 
 Bash
